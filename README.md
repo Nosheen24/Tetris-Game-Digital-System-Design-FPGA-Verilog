@@ -70,4 +70,33 @@ The main objective was to gain hands-on experience in:
 
 ---
 
-## 📁 Project Structure
+## 📊 Simulation
+- Verified using ISim waveform simulation
+- VGA timing signals validated (HSYNC/VSYNC)
+- Game logic tested via testbench stimulus
+
+---
+
+## 🎥 Output
+- Working VGA Tetris gameplay on FPGA hardware
+- Real-time block movement and scoring
+- Stable FPGA implementation without glitches
+
+---
+
+## 📌 Key Learning Outcomes
+- FPGA-based game development
+- VGA signal generation
+- FSM design for complex systems
+- Real-time digital system debugging
+- Hardware-software integration
+
+---
+
+## 🚀 Conclusion
+This project successfully demonstrates a hardware implementation of the classic Tetris game using Verilog on an FPGA platform. It combines digital design principles with real-time graphics and control systems.
+
+---
+
+## 📎 Note
+This project is designed for educational purposes as part of Digital System Design coursework at NUST.
