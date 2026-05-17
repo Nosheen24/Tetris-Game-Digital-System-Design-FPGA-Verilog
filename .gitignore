@@ -1,0 +1,8 @@
+*.vcd
+isim/
+xsim/
+*.log
+*.jou
+*.pb
+*.wdb
+*.zip
