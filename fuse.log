@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/xillinx/tetris/tb_tetris_isim_beh.exe -prj D:/xillinx/tetris/tb_tetris_beh.prj work.tb_tetris work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/xillinx/tetris/one.v" into library work
+Analyzing Verilog file "D:/xillinx/tetris/tetris_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module randomizer
+Compiling module debouncer
+Compiling module calc_cur_blk
+Compiling module vga_display
+Compiling module game_clock
+Compiling module calc_test_pos_rot
+Compiling module seg_display
+Compiling module complete_row
+Compiling module tetris
+Compiling module tb_tetris
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable D:/xillinx/tetris/tb_tetris_isim_beh.exe
+Fuse Memory Usage: 30472 KB
+Fuse CPU Usage: 359 ms

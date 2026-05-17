@@ -1,0 +1,50 @@
+# tetris.ucf
+# Constraint file for the tetris top-level module
+# Map top-level ports to physical FPGA pins (edit if your board pinout differs)
+
+# System clock input (assumed 100 MHz)
+NET "clk_too_fast" LOC = "V10" | IOSTANDARD = "LVCMOS33";
+NET "clk_too_fast" TNM_NET = sys_clk_pin;
+TIMESPEC "TS_sys_clk_pin" = PERIOD "sys_clk_pin" 10 ns HIGH 50%;
+
+# 7-segment display (seg[0]..seg[7])
+NET "seg<0>"         LOC = "T17" | IOSTANDARD = "LVCMOS33";
+NET "seg<1>"         LOC = "T18" | IOSTANDARD = "LVCMOS33";
+NET "seg<2>"         LOC = "U17" | IOSTANDARD = "LVCMOS33";
+NET "seg<3>"         LOC = "U18" | IOSTANDARD = "LVCMOS33";
+NET "seg<4>"         LOC = "M14" | IOSTANDARD = "LVCMOS33";
+NET "seg<5>"         LOC = "N14" | IOSTANDARD = "LVCMOS33";
+NET "seg<6>"         LOC = "L14" | IOSTANDARD = "LVCMOS33";
+NET "seg<7>"         LOC = "M13" | IOSTANDARD = "LVCMOS33";
+
+# 7-seg anodes (an[0]..an[3])
+NET "an<0>"          LOC = "N16" | IOSTANDARD = "LVCMOS33";
+NET "an<1>"          LOC = "N15" | IOSTANDARD = "LVCMOS33";
+NET "an<2>"          LOC = "P18" | IOSTANDARD = "LVCMOS33";
+NET "an<3>"          LOC = "P17" | IOSTANDARD = "LVCMOS33";
+
+# Switches (sw_pause, sw_rst)
+NET "sw_pause"       LOC = "T10" | IOSTANDARD = "LVCMOS33";
+NET "sw_rst"         LOC = "T5"  | IOSTANDARD = "LVCMOS33";
+
+# Buttons (btn_drop, btn_rotate, btn_left, btn_down, btn_right)
+NET "btn_drop"       LOC = "B8"  | IOSTANDARD = "LVCMOS33";
+NET "btn_rotate"     LOC = "A8"  | IOSTANDARD = "LVCMOS33";
+NET "btn_left"       LOC = "C4"  | IOSTANDARD = "LVCMOS33";
+NET "btn_down"       LOC = "C9"  | IOSTANDARD = "LVCMOS33";
+NET "btn_right"      LOC = "D9"  | IOSTANDARD = "LVCMOS33";
+
+# VGA outputs (rgb[0]..rgb[7])
+NET "rgb<0>"      LOC = "U7"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<1>"      LOC = "V7"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<2>"      LOC = "N7"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<3>"      LOC = "P8"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<4>"      LOC = "T6"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<5>"      LOC = "V6"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<6>"      LOC = "R7"  | IOSTANDARD = "LVCMOS33";
+NET "rgb<7>"      LOC = "T7"  | IOSTANDARD = "LVCMOS33";
+
+# VGA sync
+NET "hsync"          LOC = "N6"  | IOSTANDARD = "LVCMOS33";
+NET "vsync"          LOC = "P7"  | IOSTANDARD = "LVCMOS33";
+
