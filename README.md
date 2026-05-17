@@ -1,22 +1,5 @@
 # 🎮 FPGA Tetris Game (Verilog)
 
-## 👩‍💻 Submitted By
-- Nosheen Fatima (411289)  
-- Ujala Kiran (432071)
-
-Department of Computer & Software Engineering  
-College of E&ME, NUST Rawalpindi  
-
----
-
-## 📌 Course
-Digital System Design
-
-## 👨‍🏫 Instructors
-Dr. M Akmal Shafique / LE Usama Shoukat  
-
----
-
 ## 📖 Project Overview
 This project implements the classic **Tetris game on the Nexys 3 FPGA board** using Verilog HDL.  
 The system uses VGA display output, finite state machines, and hardware-based logic to simulate real-time gameplay.
